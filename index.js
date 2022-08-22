@@ -33,7 +33,7 @@ document.getElementById("calculate").addEventListener("click", function () {
 
 
     let input = document.getElementById("per-player").value;
-    let subTotalElement = input * 5;
+    let subTotalElement = input * array.length;
     console.log(subTotalElement);
     let subTotal = document.getElementById("sub-total");
     subTotal.innerText = subTotalElement;
@@ -55,3 +55,4 @@ document.getElementById("calculate-total").addEventListener("click", function ()
     let totalElement = parseInt(totalElementString);
     total.innerText = totalElement;
 })
+
