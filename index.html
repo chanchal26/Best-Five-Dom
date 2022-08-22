@@ -122,30 +122,30 @@
                     </div>
                 </div>
                 <div class="card shadow" style="width: 20rem;">
-                    <h1 class="text-center">Budget</h1>
+                    <h1 class="text-center pt-4">Budget</h1>
                     <hr>
                     <div class="card-body text-center">
                         <div class="d-flex justify-content-between">
                             <p class="px-2">Per Player</p>
-                            <input type="text">
+                            <input id="per-player" type="number">
                         </div>
-                        <a class="btn btn-primary px-5 mt-3 mb-3">Calculate</a>
+                        <button class="btn btn-primary px-5 mt-3 mb-3" id="calculate">Calculate</button>
                         <div class="d-flex justify-content-around">
                             <p>Player Expenses</p>
-                            <p>$<span>0</span></p>
+                            <p>$<span id="sub-total">0</span></p>
                         </div>
                         <div class="d-flex justify-content-between mb-4">
                             <p>Manager</p>
-                            <input type="text">
+                            <input id="manager" type="number">
                         </div>
                         <div class="d-flex justify-content-between">
                             <p>Coach</p>
-                            <input type="text">
+                            <input id="coach" type="number">
                         </div>
-                        <a class="btn btn-primary px-5 mt-3 mb-3">Calculate Total</a>
+                        <button class="btn btn-primary px-5 mt-3 mb-3" id="calculate-total">Calculate Total</button>
                         <div class="d-flex justify-content-around">
                             <p>Total</p>
-                            <p>$<span>0</span></p>
+                            <p>$<span id="total">0</span></p>
                         </div>
                     </div>
                 </div>

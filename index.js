@@ -29,3 +29,29 @@ function playerAdded(element) {
 }
 
 
+document.getElementById("calculate").addEventListener("click", function () {
+
+
+    let input = document.getElementById("per-player").value;
+    let subTotalElement = input * 5;
+    console.log(subTotalElement);
+    let subTotal = document.getElementById("sub-total");
+    subTotal.innerText = subTotalElement;
+
+})
+
+document.getElementById("calculate-total").addEventListener("click", function () {
+    let managerString = document.getElementById("manager").value;
+    let manager = parseInt(managerString);
+    console.log(manager);
+    let coachString = document.getElementById("coach").value;
+    let coach = parseInt(coachString);
+    console.log(coach);
+    let totalStrint = document.getElementById("total");
+    console.log(totalStrint);
+    let subTotalString = document.getElementById("sub-total").innerText;
+    let subTotal = parseInt(subTotalString);
+    let totalElementString = subTotal + manager + coach;
+    let totalElement = parseInt(totalElementString);
+    total.innerText = totalElement;
+})
