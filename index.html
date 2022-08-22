@@ -32,7 +32,7 @@
                     <div class="card-body text-center">
                         <h5 class="card-title">Shakib Al Hasan</h5>
                         <p>All-rounder</p>
-                        <button class="btn btn-danger px-5 my-2 select-btn">Select</button>
+                        <button class="btn btn-danger px-5 my-2 select-btn" onclick="playerAdded(this)">Select</button>
                     </div>
                 </div>
                 <div class="card col-4 shadow" style="width: 18rem;">
@@ -40,7 +40,7 @@
                     <div class="card-body text-center">
                         <h5 class="card-title">Sabbir Rahman</h5>
                         <p>All-rounder</p>
-                        <button class="btn btn-danger px-5 my-2 select-btn">Select</button>
+                        <button class="btn btn-danger px-5 my-2 select-btn" onclick="playerAdded(this)">Select</button>
                     </div>
                 </div>
                 <div class="card col-4 shadow" style="width: 18rem;">
@@ -48,7 +48,7 @@
                     <div class="card-body text-center">
                         <h5 class="card-title">Mehedy Hasan</h5>
                         <p>All-rounder</p>
-                        <button class="btn btn-danger px-5 my-2 select-btn">Select</button>
+                        <button class="btn btn-danger px-5 my-2 select-btn" onclick="playerAdded(this)">Select</button>
                     </div>
                 </div>
                 <div class="card col-4 shadow" style="width: 18rem;">
@@ -56,7 +56,7 @@
                     <div class="card-body text-center">
                         <h5 class="card-title">Mahmudullah Ryad</h5>
                         <p>All-rounder</p>
-                        <button class="btn btn-danger px-5 my-2 select-btn">Select</button>
+                        <button class="btn btn-danger px-5 my-2 select-btn" onclick="playerAdded(this)">Select</button>
                     </div>
                 </div>
                 <div class="card shadow" style="width: 18rem;">
@@ -64,7 +64,7 @@
                     <div class="card-body text-center">
                         <h5 class="card-title">Tamim Iqbal</h5>
                         <p>Batsman</p>
-                        <button class="btn btn-danger px-5 my-2 select-btn">Select</button>
+                        <button class="btn btn-danger px-5 my-2 select-btn" onclick="playerAdded(this)">Select</button>
                     </div>
                 </div>
                 <div class="card shadow" style="width: 18rem;">
@@ -72,7 +72,7 @@
                     <div class="card-body text-center">
                         <h5 class="card-title">Mushfiqur-Rahim</h5>
                         <p>Wicketkeeper</p>
-                        <button class="btn btn-danger px-5 my-2 select-btn">Select</button>
+                        <button class="btn btn-danger px-5 my-2 select-btn" onclick="playerAdded(this)">Select</button>
                     </div>
                 </div>
                 <div class="card shadow" style="width: 18rem;">
@@ -80,7 +80,7 @@
                     <div class="card-body text-center">
                         <h5 class="card-title">Mashrafe Bin Mortaza</h5>
                         <p>Bowler</p>
-                        <button class="btn btn-danger px-5 my-2 select-btn">Select</button>
+                        <button class="btn btn-danger px-5 my-2 select-btn" onclick="playerAdded(this)">Select</button>
                     </div>
                 </div>
                 <div class="card shadow" style="width: 18rem;">
@@ -88,7 +88,7 @@
                     <div class="card-body text-center">
                         <h5 class="card-title">Mustafizur Rahman</h5>
                         <p>Bowler</p>
-                        <button class="btn btn-danger px-5 my-2 select-btn">Select</button>
+                        <button class="btn btn-danger px-5 my-2 select-btn" onclick="playerAdded(this)">Select</button>
                     </div>
                 </div>
                 <div class="card shadow" style="width: 18rem;">
@@ -96,22 +96,20 @@
                     <div class="card-body text-center">
                         <h5 class="card-title">Liton Das</h5>
                         <p>Batsman</p>
-                        <button class="btn btn-danger px-5 my-2 select-btn">Select</button>
+                        <button class="btn btn-danger px-5 my-2 select-btn" onclick="playerAdded(this)">Select</button>
                     </div>
                 </div>
             </div>
             <div class="col-3">
                 <div class="card mb-4 shadow" style="width: 20rem;">
-                    <h1 class="text-center pt-4">Selected - 5</h1>
+                    <h1 class="text-center pt-4">Selected - <span id="total-added-player">0</span></h1>
                     <hr>
                     <div class="card-body">
-                        <ul>
-                            <li class="list-group-item"><span class="fw-bold">1.</span></li>
-                            <li class="list-group-item"><span class="fw-bold">2.</span></li>
-                            <li class="list-group-item"><span class="fw-bold">3.</span></li>
-                            <li class="list-group-item"><span class="fw-bold">4.</span></li>
-                            <li class="list-group-item"><span class="fw-bold">5.</span></li>
-                        </ul>
+                        <table class="table">
+                            <tbody id="players">
+
+                            </tbody>
+                        </table>
                     </div>
                 </div>
                 <div class="card shadow" style="width: 20rem;">
